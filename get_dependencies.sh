@@ -1,13 +1,21 @@
 #!/bin/bash -xv
 #
-sudo apt-get install build-essential
-sudo apt-get install libqt4-dev libqt4-qt3support
-sudo apt-get install automake libtool libtool-bin gperf flex bison
-sudo apt-get install doxygen
-sudo apt-get install octave octave-epstk
-sudo apt-get install latex2html
-sudo apt-get install texlive texlive-font-utils texlive-science-doc texlive-science
-sudo apt-get install texlive-publishers texlive-science
-sudo apt-get install transfig gnuplot graphviz
-sudo apt-get install ps2eps pgf python-tk
+
+sudo add-apt-repository -y ppa:fransschreuder1/qucs
+sudo apt-get update
+sudo apt-get install build-essential \
+libqt4-dev libqt4-qt3support \
+automake libtool libtool-bin gperf flex bison \
+doxygen \
+octave octave-epstk \
+latex2html \
+texlive texlive-font-utils texlive-science-doc texlive-science \
+texlive-publishers texlive-science \
+transfig gnuplot graphviz \
+ps2eps pgf python-tk wget adms asco
+
+# get linuxdeploy and source
+wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
+chmod +x ./linuxdeploy-x86_64.AppImage
+wget https://github.com/Qucs/qucs/archive/qucs-0.0.20-rc2.tar.gz
 
