@@ -18,6 +18,8 @@ $GITHUB_WORKSPACE/linuxdeploy-x86_64.AppImage --appdir AppDir --output appimage
 ls -l
 pwd
 cp ./Qucs-*-x86_64.AppImage  $GITHUB_WORKSPACE/Qucs-0.0.20-pre2-x86_64.AppImage
+mkdir -p $GITHUB_WORKSPACE/deploydir
+cp ./Qucs-*-x86_64.AppImage  $GITHUB_WORKSPACE/deploydir/Qucs-0.0.20-pre2-x86_64.AppImage
 cd $GITHUB_WORKSPACE
 pwd
-ls -l
+ls -lR

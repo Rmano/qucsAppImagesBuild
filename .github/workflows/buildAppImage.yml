@@ -22,6 +22,8 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
 
     # Runs a single command using the runners shell
     - name: Set up and get dependencies
@@ -33,7 +35,15 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: AppImage
-        path: $GITHUB_WORKSPACE/Qucs-0.0.20-pre2-x86_64.AppImage
+        path: deploydir/
+
+    - name: Deploy to GitHub gh-pages
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: deploydir # The folder the action should deploy.
+
     #
     # Runs a set of commands using the runners shell
     # - name: Run a multi-line script
