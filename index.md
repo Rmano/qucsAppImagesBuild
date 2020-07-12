@@ -1,41 +1,13 @@
-## These are yhe GitHub pages for the AppImages for QUCS-0.0.20
+## These are the GitHub pages for the AppImages for QUCS-0.0.20
 
-Ok, this is basically a test. Let's see if I can manage it.
+Ok, this is basically a test. Let's see if I can manage it. This repository downloads the **QUCS-0.0.20-rc2** sources from
+[the main repository](https://github.com/Qucs/qucs) and build an AppImage on Ubuntu 16.04 (the one provided by GitHub actions). 
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Rmano/qucsAppImagesBuild/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Rmano/qucsAppImagesBuild/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Link to the [latest build 0.0.20-rc2 AppImage](https://rmano.github.io/qucsAppImagesBuild/Qucs-0.0.20-pre2-x86_64.AppImage)
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This thing is offered "as is" --- but if you have any idea to make this a better repository, please tell me. 
+
+For now it will be updated manually when needed --- but my idea is to try tointegrate it into the main QUCS repository.
+
