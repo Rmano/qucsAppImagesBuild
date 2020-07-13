@@ -1,1 +1,4 @@
-theme: jekyll-theme-slate
+theme: jekyll-theme-architect
+title: AppImages for QUCS
+description: Building AppImages for QUCS with (legacy) Qt4
+show_download: false
