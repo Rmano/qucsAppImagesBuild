@@ -7,7 +7,7 @@ The versions of AppImage will be available on the [release page](https://github.
 
 Directlink to the [latest build 0.0.20-rc2 AppImage](https://github.com/Rmano/qucsAppImagesBuild/releases/download/v0.1/Qucs-0.0.20-pre2-x86_64.AppImage).
 
-
+`md5sum` for the binary above: `eeb4fde1b06bbb600db2d5e23b1958a1`
 
 ### Support or Contact
 
