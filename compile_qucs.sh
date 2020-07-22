@@ -8,7 +8,8 @@ cd workdir
 ls -l
 tar xzf ../qucs-0.0.20-rc2.tar.gz
 cd qucs-qucs*
-cp $GITHUB_WORKSPACE/good-qucs.desktop qucs/qucs/qucs.desktop # override destop file
+# cp $GITHUB_WORKSPACE/good-qucs.desktop qucs/qucs/qucs.desktop # override destop file
+cp contrib/ubuntu-debian/qucs/debian/qucs.desktop qucs/qucs/qucs.desktop # override destop file
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr
