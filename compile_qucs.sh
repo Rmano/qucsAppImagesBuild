@@ -8,8 +8,8 @@ cd workdir
 ls -l
 tar xzf ../qucs-0.0.20-rc2.tar.gz
 cd qucs-qucs*
-# cp $GITHUB_WORKSPACE/good-qucs.desktop qucs/qucs/qucs.desktop # override destop file
-cp contrib/ubuntu-debian/qucs/debian/qucs.desktop qucs/qucs/qucs.desktop # override destop file
+cp $GITHUB_WORKSPACE/good-qucs.desktop qucs/qucs/qucs.desktop # override destop file
+# cp contrib/ubuntu-debian/qucs/debian/qucs.desktop qucs/qucs/qucs.desktop # don't work, cannot find the icon
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr
@@ -23,4 +23,4 @@ mkdir -p $GITHUB_WORKSPACE/deploydir
 cp ./Qucs-*-x86_64.AppImage  $GITHUB_WORKSPACE/deploydir/Qucs-0.0.20-pre2-x86_64.AppImage
 cd $GITHUB_WORKSPACE
 pwd
-ls -lR
+# ls -lR
